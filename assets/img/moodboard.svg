@@ -1,0 +1,53 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 34" width="60" height="34">
+	<title>Teste Fit</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #1660a9 } 
+	</style>
+	<g id="Teste Fit">
+		<g id="noun_mood board_21878">
+			<path id="Rectangle 8" class="shp0" d="M33.32 0.38L42.71 0.38L42.71 9.77L33.32 9.77L33.32 0.38Z" />
+			<path id="Rectangle 9" class="shp0" d="M44.05 0.38L53.44 0.38L53.44 9.77L44.05 9.77L44.05 0.38Z" />
+			<g id="Group 918">
+				<g id="Group 917">
+					<path id="Path 4205" class="shp0" d="M4.15 22.58L1.85 10.64L13.79 8.35L14.9 14.1L16.45 14.5L14.94 6.71L0.17 9.55L3.33 25.95L7.44 25.16L8.31 21.78L4.15 22.58Z" />
+				</g>
+			</g>
+			<g id="Group 920">
+				<g id="Group 919">
+					<path id="Path 4206" class="shp0" d="M27.46 28.32L35.32 19.05L26.05 11.19L22.25 15.65L20.71 15.24L25.85 9.19L37.32 18.92L26.52 31.66L23.32 28.95L24.23 25.58L27.46 28.32Z" />
+				</g>
+			</g>
+			<g id="Group 922">
+				<g id="Group 921">
+					<path id="Path 4207" fill-rule="evenodd" class="shp0" d="M25.44 17.34L21.3 33.52L6.73 29.79L10.88 13.6L25.44 17.34ZM23.7 18.33L11.92 15.31L8.91 27.09L20.68 30.11L23.7 18.33Z" />
+				</g>
+			</g>
+			<g id="Group 937">
+				<g id="Group 936">
+					<g id="Group 931">
+						<g id="Group 930">
+							<path id="Rectangle 10" class="shp0" d="M38.87 17.1L59.01 17.1L59.01 19.14L38.87 19.14L38.87 17.1Z" />
+						</g>
+					</g>
+					<g id="Group 933">
+						<g id="Group 932">
+							<path id="Rectangle 11" class="shp0" d="M38.87 21.77L59.01 21.77L59.01 23.82L38.87 23.82L38.87 21.77Z" />
+						</g>
+					</g>
+					<g id="Group 935">
+						<g id="Group 934">
+							<path id="Rectangle 12" class="shp0" d="M38.87 26.44L59.01 26.44L59.01 28.49L38.87 28.49L38.87 26.44Z" />
+						</g>
+					</g>
+				</g>
+			</g>
+			<g id="Group 938">
+				<path id="Path 4214" class="shp0" d="M21.25 0.38L11.86 0.38L11.86 6.66L15.53 5.95L16.27 9.77L21.25 9.77L21.25 0.38Z" />
+			</g>
+			<g id="Group 939">
+				<path id="Path 4215" class="shp0" d="M27.52 9.77L31.98 9.77L31.98 0.38L22.59 0.38L22.59 9.77L24.55 9.77L25.77 8.35L27.52 9.77Z" />
+			</g>
+		</g>
+	</g>
+</svg>
