@@ -308,6 +308,7 @@ a {
 .segments-list {
   display: flex;
   align-items: flex-end;
+  min-height: 448px;
 }
 
 .segments-item {
@@ -345,6 +346,24 @@ a {
 
 .segments-item:last-child .title {
   font-weight: 800;
+}
+
+.segments-item .building1 {
+  width: 82px;
+  height: 0;
+  background: url('../img/building1.svg');
+}
+
+.segments-item .building2 {
+  width: 107px;
+  height: 0;
+  background: url('../img/building2.svg');
+}
+
+.segments-item .building3 {
+  width: 115px;
+  height: 0;
+  background: url('../img/building3.svg');
 }
 
 .quote {
@@ -437,4 +456,21 @@ a {
 .show-on-scroll.is-visible.fade-in {
   opacity: 0;
   animation: fadeIn 1s forwards;
+}
+
+.show-on-scroll.is-visible.building1 {
+  transition: height 500ms;
+  height: 219px;
+}
+
+.show-on-scroll.is-visible.building2 {
+  transition: height 500ms;
+  transition-delay: 300ms;
+  height: 274px;
+}
+
+.show-on-scroll.is-visible.building3 {
+  transition: height 500ms;
+  transition-delay: 600ms;
+  height: 366px;
 }
