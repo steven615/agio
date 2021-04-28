@@ -2,6 +2,13 @@
   color: #1660a9;
   font-family: sofia-pro, sans-serif;
   background-color: #F3F7FA;
+  padding: 34px 26px 20px 36px;
+}
+
+.header {
+  padding-left: 26px;
+  padding-right: 16px;
+  margin-bottom: 36px;
 }
 
 .header .menu-icon {
@@ -11,11 +18,6 @@
   background-color: #1660a9;
   mask: url(../img/menu.svg) no-repeat center / contain;
   -webkit-mask: url(../img/menu.svg) no-repeat center / contain;
-}
-
-.header .menu-icon a {
-  width: 100%;
-  height: 100%;
 }
 
 .page-title {
@@ -28,14 +30,17 @@
 }
 
 .top-line {
-  border: 1px dashed #033171;
+  border-top: 1px dashed #033171;
   margin: 10px 0 46px;
   animation-delay: 200ms;
   transform: scale(0);
 }
 
 .line {
-  border: 1px dashed #0e65b8;
+  border: 0;
+  border-style: dashed;
+  border-top-width: 1px;
+  border-color: #0e65b8;
   margin: 25px 0;
   animation-delay: 700ms;
   transform: scale(0);
@@ -44,6 +49,8 @@
 .vertical.line {
   margin: 0;
   margin-right: 16px;
+  border-top-width: 0;
+  border-right-width: 1px;
   border-style: solid;
   animation-delay: 400ms;
   transform: scale(0);
