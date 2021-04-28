@@ -1,0 +1,121 @@
+.container {
+  color: #1660a9;
+  font-family: sofia-pro, sans-serif;
+  background-color: #F3F7FA;
+}
+
+.header .menu-icon {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  background-color: #1660a9;
+  mask: url(../img/menu.svg) no-repeat center / contain;
+  -webkit-mask: url(../img/menu.svg) no-repeat center / contain;
+}
+
+.header .menu-icon a {
+  width: 100%;
+  height: 100%;
+}
+
+.page-title {
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 44px;
+  text-align: right;
+  padding-right: 31px;
+}
+
+.top-line {
+  border: 1px dashed #033171;
+  margin: 10px 0 46px;
+}
+
+.line {
+  border: 1px dashed #0e65b8;
+  margin: 25px 0;
+}
+
+.vertical.line {
+  margin: 0;
+  margin-right: 16px;
+  border-style: solid;
+}
+
+.main {
+  padding-left: 15px;
+  padding-right: 24px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info .title {
+  font-size: 23px;
+  letter-spacing: -1px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.info .description {
+  font-size: 12px;
+  letter-spacing: 0px;
+  line-height: 14px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.introduce {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin-bottom: 120px;
+}
+
+.introduce-item {
+  margin-right: 60px;
+}
+
+.introduce-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.introduce-header .title {
+  font-size: 15px;
+  line-height: 29px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.introduce-item .description {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer .contact, .footer .avenue {
+  font-weight: bold;
+}
+
+.footer .contact a, .footer .contact a:hover {
+  color: inherit;
+}
