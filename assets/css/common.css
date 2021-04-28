@@ -85,3 +85,16 @@ html, body, * {
     opacity: 0.0;
   }
 }
+
+@keyframes fade-in-up {
+  0% {
+    transform: translate3d(0px, 70px, 0px) scale3d(1, 1, 1) rotateX( -72deg) rotateY( 23deg) rotateZ( 0deg) skew( 0deg, 13deg);
+    transform-style: preserve-3d;
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX( 0deg) rotateY( 0deg) rotateZ( 0deg) skew( 0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+  }
+}
