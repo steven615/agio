@@ -16,3 +16,49 @@
   padding-right: 16px;
   margin-bottom: 36px;
 }
+
+.animation-fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.animation-nudge {
+  opacity: 0;
+  animation: nudge 200ms 100ms forwards;
+}
+
+.animation-stretch {
+  animation: stretch 200ms 100ms forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes nudge {
+  0% {
+    transform: translate(0, 50px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
