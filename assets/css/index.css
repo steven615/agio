@@ -130,25 +130,23 @@ a {
 }
 
 .main-introduce .content {
+  margin: 162px 125px 0 77px;
+}
+
+.main-introduce .content .item {
   display: flex;
-  margin-top: 162px;
 }
 
 .main-introduce .content .line.vertical {
   margin: 0 113px 0 82px;
 }
 
-.main-introduce .content .left {
-  padding-left: 77px;
+.main-introduce .content .info-item {
+  width: 50%;
 }
 
-.main-introduce .content .right {
-  padding-right: 125px;
-}
-
-.main-introduce .content .info-item.description {
+.main-introduce .content .info-item.img {
   display: flex;
-  flex-direction: column;
 }
 
 .main-introduce .content .info-item .title {
@@ -168,16 +166,11 @@ a {
   font-weight: 500;
 }
 
-.main-introduce .content .left .info-item .title, .main-introduce .content .left .info-item .description {
+.main-introduce .content .info-item.left{
   text-align: right;
 }
 
-.main-introduce .content .info-item.img {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.main-introduce .content .left .info-item.img {
+.main-introduce .content .info-item.img.left {
   justify-content: flex-end;
 }
 
@@ -185,20 +178,28 @@ a {
   margin-bottom: 510px;
 }
 
-.main-introduce .content .left .info-item.description.process {
-  padding-top: 100px;
+.main-introduce .content .item.why-us .info-item {
+  margin-top: 55px;
 }
 
-.main-introduce .content .right .info-item.description.person {
-  margin-top: -80px;
+.main-introduce .content .item.process .info-item.description {
+  margin-top: 100px;
 }
 
-.main-introduce .content .left .info-item:last-child {
-  margin: 700px 0 245px;
+.main-introduce .content .item.person .info-item.description {
+  margin-top: 78px;
 }
 
-.main-introduce .content .right .info-item:last-child {
-  margin-bottom: 0;
+.main-introduce .content .item.bottle .info-item {
+  margin: 0;
+}
+
+.main-introduce .content .item.bottle .info-item.description {
+  margin-top: 259px;
+}
+
+.main-introduce .content .item.bottle .info-item.img {
+  margin-bottom: 277px;
 }
 
 .our-method {
