@@ -2,18 +2,18 @@
   color: #1660a9;
   font-family: sofia-pro, sans-serif;
   background-color: #F3F7FA;
-  padding: 34px 26px 20px 36px;
+  padding: 70px 60px 34.5px 50px;
 }
 
 .header {
-  padding-left: 26px;
-  padding-right: 16px;
-  margin-bottom: 36px;
+  padding-left: 75px;
+  padding-right: 25px;
+  margin-bottom: 43px;
 }
 
 .header .menu-icon {
-  width: 41px;
-  height: 41px;
+  width: 82px;
+  height: 82px;
   display: flex;
   background-color: #1660a9;
   mask: url(../img/menu.svg) no-repeat center / contain;
@@ -22,26 +22,24 @@
 
 .page-title {
   font-family: brandon-grotesque, sans-serif;
-  font-size: 40px;
-  letter-spacing: -1px;
-  line-height: 44px;
+  font-size: 80px;
+  letter-spacing: -2.64px;
+  text-transform: uppercase;
+  line-height: 88px;
   text-align: right;
-  padding-right: 31px;
+  padding-right: 50px;
 }
 
 .top-line {
   border-top: 1px dashed #033171;
-  margin: 10px 0 46px;
+  margin: 14.5px 0 46px;
   animation-delay: 200ms;
   transform: scale(0);
 }
 
 .line {
-  border: 0;
-  border-style: dashed;
-  border-top-width: 1px;
-  border-color: #0e65b8;
-  margin: 25px 0;
+  border: 1px dashed #0E65B8;
+  margin: 50px 0;
   animation-delay: 700ms;
   transform: scale(0);
 }
@@ -57,8 +55,8 @@
 }
 
 .main {
-  padding-left: 15px;
-  padding-right: 24px;
+  padding-left: 52px;
+  padding-right: 42px;
 }
 
 .main-content {
@@ -66,14 +64,15 @@
   justify-content: space-between;
 }
 
-.main-content img {
+.main-content .img {
   animation-delay: 300ms;
+  width: 189%;
 }
 
 .info .title {
-  font-size: 23px;
-  letter-spacing: -1px;
-  line-height: 27px;
+  font-size: 45px;
+  letter-spacing: -1.26px;
+  line-height: 53px;
   font-weight: 500;
   margin-right: 30px;
   margin-bottom: 20px;
@@ -81,22 +80,31 @@
 }
 
 .info .description {
-  font-size: 12px;
-  letter-spacing: 0px;
-  line-height: 14px;
+  font-size: 24px;
+  letter-spacing: -0.67px;
+  line-height: 28px;
   font-weight: 300;
+  opacity: 0;
   animation-delay: 600ms;
+  animation: nudge-opacity 200ms 600ms forwards;
 }
 
 .introduce {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
+  padding-left: 118px;
+  padding-right: 91px;
   margin-bottom: 120px;
 }
 
+.introduce .list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .introduce-item {
-  margin-right: 60px;
+  margin-right: 78px;
+  margin-bottom: 20px;
+  width: 250px;
 }
 
 .introduce-item:nth-child(1) {
@@ -120,29 +128,35 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 5px;
+  max-width: 250px;
 }
 
 .introduce-header .title {
-  font-size: 15px;
-  line-height: 29px;
+  font-size: 30px;
+  line-height: 58px;
   font-weight: 500;
+  letter-spacing: -0.84px;
   margin-right: 10px;
 }
 
+.introduce-header .img {
+  height: 66px;
+}
+
 .introduce-item .description {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 24px;
+  line-height: 28px;
   font-weight: 300;
-  opacity: 0.8;
+  opacity: 0.64;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  font-size: 10px;
-  line-height: 14px;
-  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
   text-align: center;
   animation-delay: 1.2s;
 }
@@ -153,4 +167,69 @@
 
 .footer .contact a, .footer .contact a:hover {
   color: inherit;
+}
+
+.footer > div:first-child, .footer .contact {
+  opacity: 0.77;
+}
+
+.footer > div:first-child {
+  min-width: 105px;
+}
+
+.footer > div:nth-child(2) {
+  margin: 0 10px;
+}
+
+@keyframes nudge-opacity {
+  0% {
+    transform: translate(0, 50px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.64;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 50px 20px 0;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-content .info {
+    margin: 10px 20px 0;
+  }
+
+  .main-content .img {
+    width: 100%;
+  }
+
+  .header, .introduce {
+    padding: 0 50px;
+  }
+
+  .introduce-item {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header, .page-title, .main, .introduce {
+    padding: 0;
+  }
+
+  .introduce .list {
+    justify-content: center;
+  }
+
+  .introduce-item {
+    display: flex;
+    flex-direction: column;
+  }
 }
