@@ -32,21 +32,27 @@ img {
   height: 100%;
 }
 
-.animation-fade-in {
-  opacity: 0;
+.show-on-scroll.is-visible.animation-fade-in {
   animation: fadeIn 1s forwards;
 }
 
-.animation-nudge {
+.show-on-scroll.animation-fade-in {
   opacity: 0;
+}
+
+.show-on-scroll.is-visible.animation-nudge {
   animation: nudge 200ms 100ms forwards;
 }
 
-.animation-stretch {
+.show-on-scroll.animation-nudge {
+  opacity: 0;
+}
+
+.show-on-scroll.is-visible.animation-stretch {
   animation: stretch 200ms 100ms forwards;
 }
 
-.animation-pulsate {
+.show-on-scroll.is-visible.animation-pulsate {
   animation: pulsate 1s ease-out infinite;
 }
 
