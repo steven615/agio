@@ -42,9 +42,7 @@ a {
   width: 82px;
   height: 82px;
   display: flex;
-  background-color: #ffffff;
-  mask: url(../img/menu.svg) no-repeat center / contain;
-  -webkit-mask: url(../img/menu.svg) no-repeat center / contain;
+  background: url('../img/menu.svg');
 }
 
 .home-builder {
