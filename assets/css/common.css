@@ -18,7 +18,6 @@ img {
 }
 
 .container {
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -49,10 +48,14 @@ img {
 }
 
 .show-on-scroll.is-visible.animation-stretch {
-  animation: stretch 200ms 100ms forwards;
+  animation: stretch 300ms 100ms forwards;
 }
 
-.show-on-scroll.is-visible.animation-pulsate {
+.show-on-scroll.animation-stretch {
+  transform: scale(0);
+}
+
+.animation-pulsate {
   animation: pulsate 1s ease-out infinite;
 }
 
