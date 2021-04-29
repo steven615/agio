@@ -28,20 +28,20 @@
   line-height: 88px;
   text-align: right;
   padding-right: 50px;
-  /* animation-delay: 200ms!important; */
+  animation-delay: 200ms!important;
 }
 
 .top-line {
   border-top: 1px dashed #033171;
   margin: 14.5px 0 46px;
-  /* animation-delay: 300ms!important; */
+  animation-delay: 300ms!important;
   transform: scale(0);
 }
 
 .line {
   border: 1px dashed #0E65B8;
   margin: 50px 0;
-  /* animation-delay: 700ms!important; */
+  animation-delay: 800ms!important;
   transform: scale(0);
 }
 
@@ -51,7 +51,7 @@
   border-top-width: 0;
   border-right-width: 1px;
   border-style: solid;
-  /* animation-delay: 500ms!important; */
+  animation-delay: 500ms!important;
   transform: scale(0);
 }
 
@@ -66,7 +66,7 @@
 }
 
 .main-content .img {
-  /* animation-delay: 400ms!important; */
+  animation-delay: 400ms!important;
   width: 189%;
 }
 
@@ -77,7 +77,7 @@
   font-weight: 500;
   margin-right: 30px;
   margin-bottom: 20px;
-  /* animation-delay: 600ms!important; */
+  animation-delay: 600ms!important;
 }
 
 .info .description {
@@ -86,6 +86,7 @@
   line-height: 28px;
   font-weight: 300;
   opacity: 0;
+  animation-delay: 700ms!important;
 }
 
 .info .description.show-on-scroll.is-visible {
@@ -111,19 +112,19 @@
 }
 
 .introduce-item:nth-child(1) {
-  /* animation-delay: 800ms!important; */
+  animation-delay: 100ms!important;
 }
 
 .introduce-item:nth-child(2) {
-  /* animation-delay: 900ms!important; */
+  animation-delay: 200ms!important;
 }
 
 .introduce-item:nth-child(3) {
-  /* animation-delay: 1s!important; */
+  animation-delay: 300ms!important;
 }
 
 .introduce-item:nth-child(4) {
-  /* animation-delay: 1.1s!important; */
+  animation-delay: 400ms!important;
 }
 
 .introduce-header {
@@ -171,15 +172,15 @@
   color: inherit;
 }
 
-.footer > div:first-child, .footer .contact {
+.footer>div:first-child, .footer .contact {
   opacity: 0.77;
 }
 
-.footer > div:first-child {
+.footer>div:first-child {
   min-width: 105px;
 }
 
-.footer > div:nth-child(2) {
+.footer>div:nth-child(2) {
   margin: 0 10px;
 }
 
@@ -188,7 +189,6 @@
     transform: translate(0, 50px);
     opacity: 0;
   }
-  
   100% {
     transform: translate(0, 0);
     opacity: 0.64;
@@ -199,23 +199,18 @@
   .container {
     padding: 50px 20px 0;
   }
-
   .main-content {
     flex-direction: column;
   }
-
   .main-content .info {
     margin: 10px 20px 0;
   }
-
   .main-content .img {
     width: 100%;
   }
-
   .header, .introduce {
     padding: 0 50px;
   }
-
   .introduce-item {
     margin-right: 20px;
   }
@@ -225,11 +220,9 @@
   .header, .page-title, .main, .introduce {
     padding: 0;
   }
-
   .introduce .list {
     justify-content: center;
   }
-
   .introduce-item {
     display: flex;
     flex-direction: column;
