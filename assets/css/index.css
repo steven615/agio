@@ -288,6 +288,7 @@ a {
   font-weight: 500;
   line-height: 117px;
   letter-spacing: -2.9px;
+  text-transform: uppercase;
 }
 
 .segments-list {
@@ -322,7 +323,7 @@ a {
   color: #f0f0f077;
   font-weight: 500;
   text-align: center;
-  opacity: 1;
+  opacity: 0;
 }
 
 .segments-item:nth-child(2) .title {
@@ -333,19 +334,19 @@ a {
   font-weight: 900;
 }
 
-.segments-item .building1 {
+.segments-item .building1.show-on-scroll {
   width: 162px;
   height: 0;
   background: url('../img/building1.svg') 100% 100% no-repeat;
 }
 
-.segments-item .building2 {
+.segments-item .building2.show-on-scroll {
   width: 212px;
   height: 0;
   background: url('../img/building2.svg') 100% 100% no-repeat;
 }
 
-.segments-item .building3 {
+.segments-item .building3.show-on-scroll {
   width: 227px;
   height: 0;
   background: url('../img/building3.svg') 100% 100% no-repeat;
@@ -447,6 +448,15 @@ a {
   transition: height 500ms;
   transition-delay: 600ms;
   height: 729px;
+}
+
+@media screen and (max-width: 1360px) {
+  .segments-list {
+    margin-top: 0;
+  }
+  .segments-item .title {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -584,6 +594,17 @@ a {
   }
 }
 
+@media screen and (max-width: 940px) {
+  .segments-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .segments-item {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
 @media screen and (max-width: 860px) {
   .home-builder .title {
     font-size: 43px;
@@ -686,10 +707,7 @@ a {
   .main-introduce .content .info-item.img.left {
     justify-content: flex-start;
   }
-  .main-introduce .content .item.process .info-item.description,
-  .main-introduce .content .item.person .info-item.description,
-  .main-introduce .content .item.bottle .info-item.description,
-  .main-introduce {
+  .main-introduce .content .item.process .info-item.description, .main-introduce .content .item.person .info-item.description, .main-introduce .content .item.bottle .info-item.description, .main-introduce {
     margin: 0;
   }
   .main-introduce .content .item.bottle .info-item.img {
@@ -730,6 +748,39 @@ a {
   .our-method .method-item .description {
     max-width: 100%;
     padding: 0;
+  }
+  .all-segments {
+    margin-top: 48px;
+  }
+  .all-segments>.title {
+    font-size: 45px;
+    line-height: 48px;
+    letter-spacing: 0;
+  }
+  .segments-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .segments-item {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .segments-item .title {
+    font-size: 38px;
+    margin-top: 17px;
+  }
+  .segments-item .img {
+    display: flex;
+    align-items: flex-end;
+  }
+  .segments-item .building1.img {
+    min-height: 434px;
+  }
+  .segments-item .building2.img {
+    min-height: 545px;
+  }
+  .segments-item .building3.img {
+    min-height: 729px;
   }
   .quote {
     margin-bottom: 50px;
