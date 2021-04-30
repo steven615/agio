@@ -11,10 +11,11 @@
   margin-bottom: 43px;
 }
 
-.header .menu-icon {
+.header .menu-icon, .nav-menu .menu-icon {
   width: 82px;
   height: 82px;
   display: flex;
+  position: relative;
   background: url('../img/menu_black.svg');
 }
 

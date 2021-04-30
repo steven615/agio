@@ -26,9 +26,85 @@ img {
   justify-content: space-between;
 }
 
-.header .menu-icon a {
+.nav-menu {
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  font-family: sofia-pro, sans-serif;
+  background: rgba(27, 30, 39, 0.5);
+  backdrop-filter: blur(30px);
+}
+
+.nav-menu .menu-icon:after {
+  content: '';
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  left: 6px;
+  width: 71px;
+  height: 20px;
+  z-index: -1;
+}
+
+.nav-menu:not(.fade-out) {
+  display: none;
+}
+
+.nav-menu.fade {
+  display: block;
+  animation: fadeIn .5s forwards;
+  transition-timing-function: ease-in-out !important;
+}
+
+.nav-menu.fade-out:not(.fade) {
+  animation: fadeOut .5s forwards;
+  transition-timing-function: ease-in-out !important;
+}
+
+.nav-menu .menu-item {
+  margin-top: 35px;
+}
+.nav-menu.fade .menu-item {
+  animation: nudge-in-left 800ms forwards;
+}
+
+.nav-menu.fade-out:not(.fade) .menu-item {
+  animation: nudge-out-left 800ms forwards;
+}
+
+.nav-menu .menu-item a {
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: bold;
+  color: #FCF9F7;
+  text-decoration: none;
+  position: relative;
+  transition: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+.nav-menu .menu-item a:after {
+  transition: .5s;
+  transition-timing-function: ease-in-out;
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 0;
+  bottom: -7px;
+  left: 0;
+  background: #FCF9F7;
+}
+
+.nav-menu .menu-item a:hover {
+  color: #A6B9BE;
+}
+
+.nav-menu .menu-item a:hover:after {
   width: 100%;
-  height: 100%;
+  background: #A6B9BE;
 }
 
 .show-on-scroll.is-visible.animation-fade-in {
@@ -68,15 +144,47 @@ img {
   }
 }
 
+@keyframes fadeOut {
+  0% {
+    display: block;
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.0;
+    display: none;
+  }
+}
+
 @keyframes nudge {
   0% {
     transform: translate(0, 50px);
     opacity: 0;
   }
-  
   100% {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+
+@keyframes nudge-in-left {
+  0% {
+    transform: translate(100px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes nudge-out-left {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100px, 0);
+    opacity: 0;
   }
 }
 
