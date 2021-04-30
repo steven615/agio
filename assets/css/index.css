@@ -14,6 +14,19 @@ a {
   animation-duration: 500ms!important;
 }
 
+.nav-menu .menu-icon {
+  width: 82px;
+  height: 82px;
+  display: flex;
+  position: relative;
+  background: url('../img/menu.svg');
+  background-size: cover;
+}
+
+.nav-menu .menu-icon:after {
+  content: none;
+}
+
 .line {
   border: 0;
   border-style: dashed;
@@ -524,8 +537,13 @@ a {
   .header a:first-child {
     width: 100px;
   }
-  .header .menu-icon {
+  .header .menu-icon, .nav-menu .menu-icon {
     width: 45px;
+    height: 45px;
+  }
+  .nav-menu .menu-item a {
+    font-size: 40px;
+    line-height: 40px;
   }
   .home-builder {
     margin-left: -30px;
@@ -615,6 +633,9 @@ a {
   }
   .segments-item .building3.img {
     min-height: 729px;
+  }
+  .show-on-scroll.is-visible.building1, .show-on-scroll.is-visible.building2, .show-on-scroll.is-visible.building3 {
+    transition-delay: 200ms;
   }
 }
 
