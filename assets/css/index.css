@@ -38,11 +38,15 @@ a {
   z-index: 10;
 }
 
-.header .menu-icon {
+.header .menu-icon, .nav-menu .menu-icon {
   width: 82px;
   height: 82px;
   display: flex;
   background: url('../img/menu.svg');
+}
+
+.nav-menu .menu-icon:after {
+  content: none;
 }
 
 .home-builder {
