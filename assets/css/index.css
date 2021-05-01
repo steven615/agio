@@ -27,6 +27,15 @@ a {
   content: none;
 }
 
+.home-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .line {
   border: 0;
   border-style: dashed;
@@ -41,14 +50,6 @@ a {
 
 .line.blue {
   border-color: #033171;
-}
-
-.header {
-  position: absolute;
-  left: 125px;
-  right: 85px;
-  top: 70px;
-  z-index: 10;
 }
 
 .home-builder {
@@ -480,6 +481,19 @@ a {
     height: 390px;
     bottom: -300px;
   }
+  .circle {
+    left: -5px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .ringring {
+    height: 20px;
+    width: 20px;
+    left: -10px;
+    top: -10px;
+  }
   .home-builder .title, .human-touch .title {
     font-size: 80px;
     line-height: 90px;
@@ -692,11 +706,23 @@ a {
 
 @media screen and (max-width: 768px) {
   .home-builder .title {
-    width: 100%;
+    width: 95%;
+    top: 68vw;
+  }
+  .home-builder .home-background {
+    background-size: 260vw;
+    background-position-y: 0vw;
+    height: 145vw;
   }
   .human-touch .title {
     max-width: 100%;
     margin: 16px 0 25px 15px;
+  }
+  .home-builder .dot {
+    bottom: 14vw;
+  }
+  .home-builder .line {
+    height: 400px;
   }
   .main-introduce>.description {
     margin: 35px auto;
@@ -842,5 +868,29 @@ a {
   .footer .contact {
     font-size: 20px;
     line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .home-builder .title {
+    top: 60vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .home-builder .line {
+    height: 370px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .home-builder .line {
+    height: 352px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .home-builder .line {
+    height: 348px;
   }
 }

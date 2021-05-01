@@ -24,18 +24,50 @@ img {
 .header {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  left: 125px;
+  right: 85px;
+  top: 70px;
+  z-index: 100;
 }
 
 .nav-menu {
   width: 100vw;
   height: 100vh;
-  padding: 50px;
+  padding: 0 100px;
   position: fixed;
   top: 0;
   z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: sofia-pro, sans-serif;
+  color: #FCF9F7;
   background: rgba(27, 30, 39, 0.5);
   backdrop-filter: blur(30px);
+}
+
+.nav-menu .menu {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-menu .nav-footer {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  left: 100px;
+  bottom: 50px;
+  position: absolute;
+}
+
+.nav-menu .menu-icon {
+  margin-left: auto;
+  margin-top: 70px;
 }
 
 .nav-menu .menu-icon:after {
@@ -67,6 +99,7 @@ img {
 .nav-menu .menu-item {
   margin-top: 35px;
 }
+
 .nav-menu.fade .menu-item {
   animation: nudge-in-left 800ms forwards;
 }

@@ -5,13 +5,7 @@
   padding: 70px 60px 34.5px 50px;
 }
 
-.header {
-  padding-left: 75px;
-  padding-right: 25px;
-  margin-bottom: 43px;
-}
-
-.header .menu-icon, .nav-menu .menu-icon {
+.header .menu-icon {
   width: 82px;
   height: 82px;
   display: flex;
@@ -27,6 +21,7 @@
   line-height: 88px;
   text-align: right;
   padding-right: 50px;
+  margin-top: 150px;
   animation-delay: 200ms!important;
 }
 

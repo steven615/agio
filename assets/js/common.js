@@ -3,18 +3,6 @@
  */
 document.querySelector('.header .menu-icon').addEventListener('click', () => {
   toggleMenu();
-  document.querySelector('.nav-menu').style.display = 'block';
-  document.querySelectorAll('.nav-menu .menu-item').forEach(elem => {elem.style.opacity = 0;})
-  setOrderOfNavAnimation();
-});
-
-document.querySelector('.nav-menu .menu-icon').addEventListener('click', () => {
-  toggleMenu();
-  setOrderOfNavAnimation('hide');
-  document.querySelectorAll('.nav-menu .menu-item').forEach(elem => {elem.style.opacity = 1;})
-  setTimeout(() => {
-    document.querySelector('.nav-menu').style.display = 'none';
-  }, 500);
 });
 
 const toggleMenu = () => {
@@ -26,6 +14,21 @@ const toggleMenu = () => {
 
   menu.classList.toggle('fade');
   menu.classList.add('fade-out');
+
+  let isShowed = menu.classList.contains('fade');
+
+  if (isShowed) {
+    document.querySelector('.nav-menu').style.display = 'flex';
+    document.querySelectorAll('.nav-menu .menu-item').forEach(elem => { elem.style.opacity = 0; });
+    setOrderOfNavAnimation();
+    return;
+  }
+
+  setOrderOfNavAnimation('hide');
+  document.querySelectorAll('.nav-menu .menu-item').forEach(elem => { elem.style.opacity = 1; });
+  setTimeout(() => {
+    document.querySelector('.nav-menu').style.display = 'none';
+  }, 500);
 };
 
 // Show nav 
@@ -33,15 +36,15 @@ const setOrderOfNavAnimation = (method = 'show') => {
   let menuElems = document.querySelectorAll('.nav-menu .menu-item');
   let menuElemsArr = [].slice.call(menuElems);
 
-  if(method === 'hide') {
+  if (method === 'hide') {
     menuElemsArr.reverse();
   }
 
   menuElemsArr.forEach((elem, i) => {
     elem.style.animationDelay = i * 150 + 'ms';
   });
-  
-}
+
+};
 
 /**
  * Animation on scroll
