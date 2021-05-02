@@ -7,7 +7,7 @@ a {
   color: #ffffff;
   position: relative;
   background: #1660A9;
-  padding: 0 85px 0 125px;
+  padding: 377px 85px 0 125px;
 }
 
 .animation-nudge {
@@ -25,15 +25,6 @@ a {
 
 .nav-menu .menu-icon:after {
   content: none;
-}
-
-.home-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 .line {
@@ -54,13 +45,19 @@ a {
 
 .home-builder {
   position: relative;
-  margin: 0 -85px 377px -125px;
+  height: 1000px;
+  color: #ffffff;
+  font-family: sofia-pro, sans-serif;
 }
 
-.home-builder .home-background {
+.home-video {
+  object-fit: cover;
+  width: 100vw;
   height: 1000px;
-  background: url('../img/home.svg') 100% 100% no-repeat;
-  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url('../img/home.svg') 100% 100%;
 }
 
 .home-builder .title {
@@ -72,7 +69,7 @@ a {
   text-align: right;
   position: absolute;
   right: 77px;
-  top: 540px;
+  bottom: 360px;
 }
 
 .home-builder .dot {
@@ -88,6 +85,7 @@ a {
   bottom: -377px;
   transform: scale(0);
   animation-delay: 100ms;
+  z-index: 10;
 }
 
 .ring-container {
@@ -209,10 +207,12 @@ a {
 }
 
 .main-introduce .content .item.bottle .info-item.description {
-  margin-top: 259px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.main-introduce .content .item.bottle .info-item.img {
+.main-introduce .content .item.bottle .info-item.img, .main-introduce .content .item.bottle .info-item.description {
   margin-bottom: 277px;
 }
 
@@ -347,7 +347,6 @@ a {
 .segments-item:last-child .title {
   font-weight: 900;
 }
-
 .segments-item .building1.show-on-scroll {
   width: 162px;
   height: 0;
@@ -364,6 +363,10 @@ a {
   width: 227px;
   height: 0;
   background: url('../img/building3.svg') 100% 100% no-repeat;
+}
+
+.segments-item .building1.show-on-scroll, .segments-item .building2.show-on-scroll, .segments-item .building3.show-on-scroll {
+  background-size: 100%;
 }
 
 .quote {
@@ -474,8 +477,8 @@ a {
 }
 
 @media screen and (max-width: 1280px) {
-  .home-builder {
-    margin-bottom: 300px;
+  .container {
+    padding-top: 300px;
   }
   .home-builder .line {
     height: 390px;
@@ -487,7 +490,6 @@ a {
     width: 10px;
     height: 10px;
   }
-
   .ringring {
     height: 20px;
     width: 20px;
@@ -505,7 +507,7 @@ a {
   .main-introduce .content .info-item {
     margin-bottom: 300px;
   }
-  .main-introduce .content .item.bottle .info-item.img {
+  .main-introduce .content .item.bottle .info-item.img, .main-introduce .content .item.bottle .info-item.description {
     margin-bottom: 180px;
   }
   .main-introduce .content .info-item .title {
@@ -541,7 +543,8 @@ a {
 
 @media screen and (max-width: 1024px) {
   .container {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .header {
     left: 46px;
@@ -559,13 +562,6 @@ a {
     font-size: 40px;
     line-height: 40px;
   }
-  .home-builder {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
-  .home-builder .title {
-    right: 30px;
-  }
   .main-introduce {
     margin-bottom: 70px;
   }
@@ -580,6 +576,10 @@ a {
   }
   .main-introduce .content .info-item.img>div {
     width: 200px;
+  }
+  .main-introduce .content .item.bottle .info-item.img {
+    display: flex;
+    align-items: flex-end;
   }
   .main-introduce .content .item.bottle .info-item.img>div {
     height: 350px;
@@ -676,7 +676,7 @@ a {
   .main-introduce .content .item.process .info-item.description {
     margin-top: 50px;
   }
-  .main-introduce .content .item.bottle .info-item.img {
+  .main-introduce .content .item.bottle .info-item.img, .main-introduce .content .item.bottle .info-item.description {
     margin-bottom: 100px;
   }
   .our-method>.title {
@@ -707,12 +707,7 @@ a {
 @media screen and (max-width: 768px) {
   .home-builder .title {
     width: 95%;
-    top: 68vw;
-  }
-  .home-builder .home-background {
-    background-size: 260vw;
-    background-position-y: 0vw;
-    height: 145vw;
+    right: 20px;
   }
   .human-touch .title {
     max-width: 100%;
@@ -770,7 +765,7 @@ a {
   .main-introduce .content .item.process .info-item.description, .main-introduce .content .item.person .info-item.description, .main-introduce .content .item.bottle .info-item.description, .main-introduce {
     margin: 0;
   }
-  .main-introduce .content .item.bottle .info-item.img {
+  .main-introduce .content .item.bottle .info-item.img, .main-introduce .content .item.bottle .info-item.description {
     margin-bottom: 27px;
   }
   .main-introduce .content .item.bottle .line {
@@ -821,6 +816,33 @@ a {
     font-size: 38px;
     margin-top: 17px;
   }
+  .segments-item .building1.show-on-scroll {
+    width: 112px;
+  }
+  .segments-item .building1.img {
+    min-height: 298px;
+  }
+  .show-on-scroll.is-visible.building1 {
+    height: 298px;
+  }
+  .segments-item .building2.show-on-scroll {
+    width: 133px;
+  }
+  .segments-item .building2.img {
+    min-height: 344px;
+  }
+  .show-on-scroll.is-visible.building2 {
+    height: 344px;
+  }
+  .segments-item .building3.show-on-scroll {
+    width: 133px;
+  }
+  .segments-item .building3.img {
+    min-height: 430px;
+  }
+  .show-on-scroll.is-visible.building3 {
+    height: 430px;
+  }
   .quote {
     margin-bottom: 50px;
   }
@@ -868,12 +890,6 @@ a {
   .footer .contact {
     font-size: 20px;
     line-height: 28px;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .home-builder .title {
-    top: 60vw;
   }
 }
 

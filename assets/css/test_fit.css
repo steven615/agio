@@ -11,6 +11,7 @@
   display: flex;
   position: relative;
   background: url('../img/menu_black.svg');
+  background-size: 100%;
 }
 
 .page-title {
@@ -67,7 +68,6 @@
   letter-spacing: -1.26px;
   line-height: 53px;
   font-weight: 500;
-  margin-right: 30px;
   margin-bottom: 20px;
   animation-delay: 1s!important;
 }
@@ -188,6 +188,10 @@
 }
 
 @media screen and (max-width: 992px) {
+  .header {
+    right: 55px;
+    left: 100px;
+  }
   .container {
     padding: 50px 20px 0;
   }
@@ -200,7 +204,7 @@
   .main-content .img {
     width: 100%;
   }
-  .header, .introduce {
+  .introduce {
     padding: 0 50px;
   }
   .introduce-item {
@@ -212,11 +216,36 @@
   .header, .page-title, .main, .introduce {
     padding: 0;
   }
+  .header a:first-child {
+    width: 100px;
+  }
+  .header .menu-icon, .nav-menu .menu-icon {
+    width: 45px;
+    height: 45px;
+  }
+  .page-title {
+    font-size: 60px;
+  }
+  .info .title {
+    font-size: 30px;
+  }
+  .info .description {
+    font-size: 20px;
+  }
   .introduce .list {
     justify-content: center;
   }
   .introduce-item {
     display: flex;
     flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer > div {
+    padding-bottom: 10px;
   }
 }
