@@ -57,7 +57,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background: url('../img/home.svg') 100% 100%;
+  z-index: -10;
 }
 
 .home-builder .title {
@@ -309,7 +309,7 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  min-height: 850px;
+  min-height: 874px;
   margin-top: -80px;
 }
 
@@ -464,7 +464,7 @@ a {
 .show-on-scroll.is-visible.building3 {
   transition: height 500ms;
   transition-delay: 600ms;
-  height: 729px;
+  height: 730px;
 }
 
 @media screen and (max-width: 1360px) {
@@ -557,6 +557,12 @@ a {
   .header .menu-icon, .nav-menu .menu-icon {
     width: 45px;
     height: 45px;
+  }
+  .nav-menu {
+    padding: 0 45px;
+  }
+  .nav-menu .nav-footer {
+    left: 45px;
   }
   .nav-menu .menu-item a {
     font-size: 40px;

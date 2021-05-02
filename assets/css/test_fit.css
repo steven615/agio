@@ -14,6 +14,17 @@
   background-size: 100%;
 }
 
+.header .menu-icon:after {
+  content: '';
+  width: 70px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  z-index: -1;
+  top: 30px;
+  left: 5px;
+}
+
 .page-title {
   font-family: brandon-grotesque, sans-serif;
   font-size: 80px;
@@ -216,6 +227,10 @@
   .header, .page-title, .main, .introduce {
     padding: 0;
   }
+  .header {
+    left: 25px;
+    right: 20px;
+  }
   .header a:first-child {
     width: 100px;
   }
@@ -223,11 +238,26 @@
     width: 45px;
     height: 45px;
   }
+  .nav-menu .menu-item a {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .nav-menu {
+    padding: 0 25px;
+  }
+  .header .menu-icon:after {
+    width: 35px;
+    top: 10px;
+  }
+  .nav-menu .nav-footer {
+    left: 25px;
+  }
   .page-title {
     font-size: 60px;
   }
   .info .title {
     font-size: 30px;
+    line-height: 35px;
   }
   .info .description {
     font-size: 20px;
@@ -239,13 +269,11 @@
     display: flex;
     flex-direction: column;
   }
-
   .footer {
     flex-direction: column;
     align-items: center;
   }
-
-  .footer > div {
+  .footer>div {
     padding-bottom: 10px;
   }
 }
